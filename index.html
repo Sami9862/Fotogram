@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="icon" type="image/x-icon" href="./logo/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <img class=" logo" src="./logo/Fotogram_Logo.svg" alt="Fotogram">
+    </header>
+    <div class="sepertator"></div>
+    <div id="overlay" class="d_none" onclick="closeOverlay()">
+        <span id="close" onclick="closeOverlay()">&times;</span>
+        <div class="navigation">
+            <span id="prev" class="slideBar" onclick="previousButton(event)">&lt;</span>
+            <span id="next" class="slideBar" onclick="nextButton(event)">&gt;</span>
+        </div>
+        <div id="overlay-image">
+            <div id="bigPicture" class="bigPicture">
+            </div>
+        </div>
+    </div>
+    <div class="fullscreen-Container">
+        <div id="main-C" class="main-C">
+            <div id="myImgs"></div>
+        </div>
+    </div>
+    <div class=" sepertator"></div>
+    <footer>
+        <div class="design">
+            <img class="sami" src="./img/Sami.jpg" alt="Sami">
+            <h3>Design by Sami </h3>
+        </div>
+    </footer>
+</body>
+<script src="./main.js"></script>
+
+</html>

@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: #1B1F3B;
+    height: 100px;
+    width: auto;
+    padding-top: 18px;
+    padding-left: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 300px;
+}
+
+.sepertator {
+
+    height: 3px;
+    width: auto;
+    background-color: #00A896;
+    box-shadow: 2px 2px 2px #55c2b7;
+}
+
+.fullscreen-Container {
+    flex: 1;
+    place-items: center;
+    width: 100%;
+    background-color: #F0F7F8;
+}
+
+.main-C {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0;
+}
+
+#myImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 80px;
+    flex-wrap: wrap;   
+}
+
+.main-C img:hover {
+
+    color: #144961;
+    filter: drop-shadow(2px 2px 16px #1B1F3B);
+    text-decoration: none;
+}
+
+.d_none {
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+#overlay .navigation {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+}
+
+#overlay .navigation span {
+    cursor: pointer;
+    color: #1B1F3B;
+    font-size: 36px;
+    padding: 8px 18px;
+    background: #00A896;
+    border-radius: 50%;
+}
+
+#overlay .navigation span:hover {
+    background: #CDD1D2;
+    color: black;
+}
+
+#close {
+    position: fixed;
+    cursor: pointer;
+    color: #1B1F3B;
+    top: 4%;
+    right: 4%;
+    font-size: 36px;
+    padding: 10px 22px;
+    background: #00A896;
+    border-radius: 50%;
+}
+
+#overlay span#close:hover {
+    background: #CDD1D2;
+    color: black;
+}
+
+#overlay.d_none {
+    display: none;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.sami {
+    border-radius: 8px;
+    height: 78px;
+    width: 78px;
+}
+
+h3 {
+    font-family: "Winky Rough", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+footer {
+    background-color: #1B1F3B;
+    /* height: 100px; */
+    width: auto;
+    margin-left: calc(-50vw + 50%);
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(max-width:850px) {
+    .myImg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 100px;
+    }
+
+    .logo {
+        height: 100px;
+        width: 250px;
+    }
+}
+
+@media(max-width:760px) {
+    #myImgs {
+
+        padding: 74px;
+    }
+}
+
+@media(max-width:555px) {
+    header {
+        padding-top: 12px;
+        padding-left: 16px;
+    }
+
+    .logo {
+        height: 100px;
+        width: 200px;
+    }
+
+
+    .myImgs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 38px;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width:481px) {
+
+    .logo {
+        height: 100px;
+        width: 138px;
+    }
+
+    #myImgs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 38px;
+        justify-content: center;
+    }
+
+
+
+    #overlay .navigation {
+        display: flex;
+        justify-content: space-around;
+        gap: 22px;
+        width: 90%;
+        position: absolute;
+        top: 90%;
+        transform: translateY(-50%);
+    }
+
+    .section-Img {
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+
+    .sami {
+        height: 68px;
+        width: 68px;
+    }
+
+
+    footer {
+        padding-left: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width:348px) {
+
+    #overlay .navigation {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        width: 70%;
+        position: absolute;
+        top: 90%;
+        transform: translateY(-50%);
+    }
+
+    #overlay .navigation span {
+        cursor: pointer;
+        font-size: 32px;
+        padding: 4px 14px;
+        border-radius: 50%;
+    }
+
+
+    #close {
+        position: fixed;
+        cursor: pointer;
+        top: 4%;
+        right: 4%;
+        font-size: 30px;
+        padding: 8px 18px;
+        border-radius: 50%;
+    }
+
+    h3 {
+
+        font-size: 16px;
+    }
+}
