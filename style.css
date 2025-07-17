@@ -42,7 +42,7 @@ header {
     width: 100%;
     margin: 0;
     padding-block: 64px;
-    
+
 }
 
 #myImgs {
@@ -51,7 +51,7 @@ header {
     align-items: center;
     gap: 10px;
     padding: 80px;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
 .main-C img:hover {
@@ -192,7 +192,6 @@ footer {
         width: 200px;
     }
 
-
     .myImgs {
         display: flex;
         flex-wrap: wrap;
@@ -204,7 +203,6 @@ footer {
 }
 
 @media(max-width:481px) {
-
     .logo {
         height: 100px;
         width: 138px;
@@ -217,8 +215,6 @@ footer {
         padding: 38px;
         justify-content: center;
     }
-
-
 
     #overlay .navigation {
         display: flex;
@@ -253,7 +249,6 @@ footer {
 }
 
 @media(max-width:348px) {
-
     #overlay .navigation {
         display: flex;
         justify-content: space-between;
@@ -271,7 +266,6 @@ footer {
         border-radius: 50%;
     }
 
-
     #close {
         position: fixed;
         cursor: pointer;
@@ -283,7 +277,6 @@ footer {
     }
 
     h3 {
-
         font-size: 16px;
     }
 }
