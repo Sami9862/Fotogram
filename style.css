@@ -8,7 +8,6 @@ body {
 }
 
 header {
-
     background-color: #1B1F3B;
     height: 100px;
     width: auto;
@@ -25,7 +24,6 @@ header {
 }
 
 .sepertator {
-
     height: 3px;
     width: auto;
     background-color: #00A896;
@@ -57,7 +55,6 @@ header {
 }
 
 .main-C img:hover {
-
     color: #144961;
     filter: drop-shadow(2px 2px 16px #1B1F3B);
     text-decoration: none;
@@ -82,7 +79,6 @@ header {
 }
 
 #overlay .navigation {
-
     display: flex;
     justify-content: space-evenly;
     width: 60%;
@@ -259,7 +255,6 @@ footer {
 @media(max-width:348px) {
 
     #overlay .navigation {
-
         display: flex;
         justify-content: space-between;
         gap: 30px;
