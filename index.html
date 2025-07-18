@@ -16,33 +16,33 @@
 </head>
 
 <body onload="init()">
-    <header>
-        <img class=" logo" src="./logo/Fotogram_Logo.svg" alt="Fotogram">
-    </header>
-    <div class="sepertator"></div>
-    <div id="overlay" class="d_none" onclick="closeOverlay()">
-        <span id="close" onclick="closeOverlay()">&times;</span>
-        <div class="navigation">
-            <span id="prev" class="slideBar" onclick="previousButton(event)">&lt;</span>
-            <span id="next" class="slideBar" onclick="nextButton(event)">&gt;</span>
-        </div>
-        <div id="overlay-image">
-            <div id="bigPicture" class="bigPicture">
+    <div class="fullscreen-Container">
+        <header>
+            <img class=" logo" src="./logo/Fotogram_Logo.svg" alt="Fotogram">
+        </header>
+        <div class="sepertator"></div>
+        <div id="overlay" class="d_none" onclick="closeOverlay()">
+            <span id="close" onclick="closeOverlay()">&times;</span>
+            <div class="navigation">
+                <span id="prev" class="slideBar" onclick="previousButton(event)">&lt;</span>
+                <span id="next" class="slideBar" onclick="nextButton(event)">&gt;</span>
+            </div>
+            <div id="overlay-image">
+                <div id="bigPicture" class="bigPicture">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fullscreen-Container">
         <div id="main-C" class="main-C">
             <div id="myImgs"></div>
-        </div> 
-    </div>
-    <div class=" sepertator"></div>
-    <footer>
-        <div class="design">
-            <img class="sami" src="./img/Sami.jpg" alt="Sami">
-            <h3>Design by Sami </h3>
         </div>
-    </footer>
+        <div class=" sepertator"></div>
+        <footer>
+            <div class="design">
+                <img class="sami" src="./img/Sami.jpg" alt="Sami">
+                <h3>Design by Sami </h3>
+            </div>
+        </footer>
+    </div>
 </body>
 <script src="./main.js"></script>
 
